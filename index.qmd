@@ -1,7 +1,7 @@
 ---
 title: "Omar Hayat"
 about:
-  template: trestles
+  template: marquee 
   links:
 #    - icon: file-earmark
 #      text: CV
@@ -12,7 +12,6 @@ about:
       text: LinkedIn
       href: https://www.linkedin.com/in/omarhayat1/
 ---
-
 
 I am an incoming **MMath in Computational Mathematics** student at the **University of Waterloo** in **Fall 2024**.
 
