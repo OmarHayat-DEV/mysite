@@ -20,9 +20,7 @@ I am co-supervised by <a  onclick="window.open('https://uwaterloo.ca/scholar/g6t
 I am in the process of building my theoretical foundation and finding research direction in the areas of **optimization** and **machine learning**. 
 
 My long term goal is to be an active researcher in these spaces.
-
-[Link this text to another .qmd file](posts/test.qmd)
-
+ 
 ___
 ##### Education 
   <span style="font-size: 0.85em;">
