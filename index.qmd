@@ -1,0 +1,97 @@
+---
+title: "Omar Hayat"
+about:
+  template: marquee
+  links:
+    - icon: file-earmark
+      text: CV
+    - icon: github
+      text: Github
+      href: https://github.com/OmarHayat-DEV
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/omarhayat1/
+---
+___
+I am an incoming **MMath in Computational Mathematics** student at the **University of Waterloo** in **Fall 2024**.
+
+I am co-supervised by <a  onclick="window.open('https://uwaterloo.ca/scholar/g6tran/home')" style="cursor: pointer;">**Dr. Giang Tran**</a> and <a  onclick="window.open('https://www.saeedghadimi.com/home')" style="cursor: pointer;">**Dr. Saeed Ghadimi**</a> 
+
+I am in the process of building my theoretical foundation and finding research direction in the areas of **optimization** and **machine learning**. 
+
+My long term goal is to be an active researcher in these spaces.
+
+___
+##### Education 
+  <span style="font-size: 0.85em;">
+  <a onclick="window.open('https://uwaterloo.ca/computational-mathematics/current-masters-students/degree-requirements')" style="cursor: pointer;"> 
+  **MMath Computational Mathematics**
+  </a> <br>
+   <span style="font-size:0.95em;">
+   *University of  Waterloo* <br/> 
+   *Sep 2024 --- Aug 2025*
+   </span> 
+</span> 
+
+<span style="font-size:0.85em;">
+**Honours BSc Computer Science and Mathematics** <br/>
+ <span style="font-size:0.95em;">
+ *University of Ottawa* <br/>
+ *Sep 2018 --- May 2023*
+ </span>
+</span> 
+
+___
+##### Work Experience 
+<span style="font-size:0.85em;">
+**Data Engineering Intern**<br/>
+ <span style="font-size:0.95em;">
+ *National Research Council of Canada --- Automotive and Surface Transportation Centre* <br/>
+ *May 2022 --- Dec 2022 | Ottawa, ON * 
+ </span>
+</span> 
+
+<span style="font-size:0.85em;">
+**Data Science Intern**<br/>
+ <span style="font-size:0.95em;">
+ <a onclick="window.open('https://fintrac-canafe.canada.ca/intro-eng')" style="cursor: pointer;">
+ *Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)*
+ </a> <br/>
+ *Sep 2021 --- Dec 2021 | Ottawa,ON *
+ </span>
+</span> 
+
+<span style="font-size:0.85em;">
+**Data Science Intern **<br/>
+ <span style="font-size:0.95em;">
+ <a onclick="window.open('https://www.novartis.com/')" style="cursor: pointer;">
+ *Novartis Pharmaceuticals * 
+ </a>
+ <br/>
+ *May 2020 --- Dec 2020 | Remote* 
+ </span>
+</span> 
+
+___
+##### Extra Curricular Experience
+<span style="font-size:0.85em;">
+**Software Engineering Team Lead**<br/>
+ <span style="font-size:0.95em;">
+ <a onclick="window.open('https://uosupermileage.ca/')" style="cursor: pointer;">
+ *Engineering Competition Team --- UO Supermileage* 
+ </a>
+ <br/>
+ *Sep 2021 --- Sep 2022*
+ </span>
+</span> 
+
+<span style="font-size:0.85em;">
+**Printed Circuit Board Designer**<br/>
+ <span style="font-size:0.95em;">
+ <a onclick="window.open('https://uosupermileage.ca/')" style="cursor: pointer;">
+ *Engineering Competition Team --- UO Supermileage*
+ </a>
+ <br/>
+ *Jan 2019 --- Sep 2021*
+ </span>
+</span> 
