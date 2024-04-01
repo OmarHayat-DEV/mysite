@@ -1,18 +1,19 @@
 ---
 title: "Omar Hayat"
 about:
-  template: marquee
+  template: trestles
   links:
-    - icon: file-earmark
-      text: CV
+#    - icon: file-earmark
+#      text: CV
     - icon: github
       text: Github
-      href: https://github.com/OmarHayat-DEV
+      url: https://github.com/OmarHayat-DEV/mysite
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/omarhayat1/
 ---
-___
+
+
 I am an incoming **MMath in Computational Mathematics** student at the **University of Waterloo** in **Fall 2024**.
 
 I am co-supervised by <a  onclick="window.open('https://uwaterloo.ca/scholar/g6tran/home')" style="cursor: pointer;">**Dr. Giang Tran**</a> and <a  onclick="window.open('https://www.saeedghadimi.com/home')" style="cursor: pointer;">**Dr. Saeed Ghadimi**</a> 
@@ -21,7 +22,6 @@ I am in the process of building my theoretical foundation and finding research d
 
 My long term goal is to be an active researcher in these spaces.
 
-New change new change new change
 
 ___
 ##### Education 

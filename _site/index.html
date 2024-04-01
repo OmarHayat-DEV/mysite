@@ -69,10 +69,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">About Me</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -92,23 +88,31 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-marquee content">
-  <div class="about-image-container">
-  </div>
-  <div class="about-contents">
-    <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-trestles content">
+  <div class="about-entity">
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Omar Hayat</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header> <main class="content" id="quarto-document-content">
-<hr>
+</header>
+    <div class="about-links">
+  <a href="https://github.com/OmarHayat-DEV/mysite" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
+  <a href="https://www.linkedin.com/in/omarhayat1/" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+</div>
+  </div>
+  <div class="about-contents"><main class="content" id="quarto-document-content">
 <p>I am an incoming <strong>MMath in Computational Mathematics</strong> student at the <strong>University of Waterloo</strong> in <strong>Fall 2024</strong>.</p>
 <p>I am co-supervised by <a onclick="window.open('https://uwaterloo.ca/scholar/g6tran/home')" style="cursor: pointer;"><strong>Dr.&nbsp;Giang Tran</strong></a> and <a onclick="window.open('https://www.saeedghadimi.com/home')" style="cursor: pointer;"><strong>Dr.&nbsp;Saeed Ghadimi</strong></a></p>
 <p>I am in the process of building my theoretical foundation and finding research direction in the areas of <strong>optimization</strong> and <strong>machine learning</strong>.</p>
 <p>My long term goal is to be an active researcher in these spaces.</p>
-<p>New change new change new change</p>
 <hr>
 <section id="education" class="level5">
 <h5 data-anchor-id="education">Education</h5>
@@ -130,23 +134,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 </section>
-</main> 
-    <div class="about-footer"><div class="about-links">
-  <a href="" class="about-link" rel="" target="">
-    <i class="bi bi-file-earmark"></i>
-     <span class="about-link-text">CV</span>
-  </a>
-  <a href="https://github.com/OmarHayat-DEV" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://www.linkedin.com/in/omarhayat1/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-</div>
-</div>
-  </div>
+</main></div>
 </div>
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -223,7 +211,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/OmarHayat-DEV\.github\.io\/mysite\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -560,7 +548,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- © Copyright 2024 | Omar Hayat | Lasted Updated: 2024-03-31 
+ © Copyright 2024 | Omar Hayat | 2024-03-31 
   </li>  
 </ul>
     </div>

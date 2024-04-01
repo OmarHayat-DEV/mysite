@@ -9,15 +9,15 @@ website:
     left:
       - href: index.qmd
         text: About Me 
-      - href: blog.qmd
-        text: Blog
+          #      - href: blog.qmd
+        #        text: Blog
     tools:
       - icon: github
         href: https://github.com/OmarHayat-DEV
 
   page-footer:
     center: 
-      - text: "&copy Copyright 2024 | Omar Hayat | Lasted Updated: 2024-03-31 " 
+      - text: "&copy Copyright 2024 | Omar Hayat | 2024-03-31 "
 
 
 format:
