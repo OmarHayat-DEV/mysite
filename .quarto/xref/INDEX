@@ -1,6 +1,7 @@
 {
   "index.qmd": {
-    "index.html": "68da7477"
+    "index.html": "68da7477",
+    "index.tex": "5f8e8d95"
   },
   "about.qmd": {
     "about.html": "20f963f0"
@@ -10,5 +11,8 @@
   },
   "posts/about.qmd": {
     "about.html": "86d6464c"
+  },
+  "temp/temp.qmd": {
+    "temp.tex": "eb7c6f87"
   }
 }
