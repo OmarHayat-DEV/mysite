@@ -14,5 +14,8 @@
   },
   "temp/temp.qmd": {
     "temp.tex": "eb7c6f87"
+  },
+  "posts/test.qmd": {
+    "test.html": "26f0bfe3"
   }
 }

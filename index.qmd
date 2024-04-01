@@ -21,6 +21,8 @@ I am in the process of building my theoretical foundation and finding research d
 
 My long term goal is to be an active researcher in these spaces.
 
+[Link this text to another .qmd file](posts/test.qmd)
+
 ___
 ##### Education 
   <span style="font-size: 0.85em;">

@@ -1,0 +1,21 @@
+---
+title: "Toward a Unified Theory of High-Energy Metaphysics: Silly String Theory"
+date: 2008-02-29
+author:
+  - name: Josiah Carberry
+    id: jc
+    email: josiah@psychoceramics.org
+
+abstract: > 
+  The characteristic theme of the works of Stone is 
+  the bridge between culture and society. ...
+keywords:
+  - Metaphysics
+  - String Theory
+---
+
+# Some filler text here
+body text here
+
+## sub heading text here
+more text ehre

@@ -9,6 +9,8 @@ website:
     left:
       - href: index.qmd
         text: About Me 
+      - href: blog.qmd
+        text: Blog
           #      - href: blog.qmd
         #        text: Blog
     tools:
