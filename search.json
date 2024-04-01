@@ -4,20 +4,34 @@
     "href": "blog.html",
     "title": "",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nOmar Hayat\n\n\n \n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n \n\n\nOmar Hayat\n\n\n \n\n\n\n\nFeb 29, 2008\n\n\nToward a Unified Theory of High-Energy Metaphysics: Silly String Theory\n\n\nJosiah Carberry\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/test.html",
+    "href": "posts/test.html",
+    "title": "Toward a Unified Theory of High-Energy Metaphysics: Silly String Theory",
+    "section": "",
+    "text": "body text here\n\n\nmore text ehre"
+  },
+  {
+    "objectID": "posts/test.html#sub-heading-text-here",
+    "href": "posts/test.html#sub-heading-text-here",
+    "title": "Toward a Unified Theory of High-Energy Metaphysics: Silly String Theory",
+    "section": "",
+    "text": "more text ehre"
   },
   {
     "objectID": "posts/about.html",
     "href": "posts/about.html",
     "title": "Omar Hayat",
     "section": "",
-    "text": "I am an incoming MMath in Computational Mathematics student at the University of Waterloo.\nMy supervisors are Dr. Giang Tran and Dr. Saeed Ghadimi.\nI obtained my BSc in Computer Science and Mathematics from the University of Ottawa.\n\nBrief CV\n\n\nEducation\n MMath Computational Mathematics   University of Waterloo  Sep 2024 — Aug 2025  \n Honours BSc Computer Science and Mathematics   University of Ottawa  Sep 2018 — May 2023  \n\n\n\nWork Experience\n Data Engineering Intern  National Research Council of Canada — Automotive and Surface Transportation Centre  May 2022 — Dec 2022 | Ottawa, ON   \n Data Science Intern  Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)  Sep 2021 — Dec 2021 | Ottawa,ON   \n Data Science Intern   Novartis AG   May 2020 — Dec 2020 | Remote  \n\n\n\nExtra Curricular Experience\n Software Engineering Team Lead  Engineering Competition Team — UO Supermileage  Sep 2021 — Sep 2022  \n Printed Circuit Board Designer  Engineering Competition Team — UO Supermileage  Jan 2019 — Sep 2021"
+    "text": "I am an incoming MMath in Computational Mathematics student at the University of Waterloo.\nMy supervisors are Dr. Giang Tran and Dr. Saeed Ghadimi.\nI obtained my BSc in Computer Science and Mathematics from the University of Ottawa. #### Brief CV ___ ##### Education  MMath Computational Mathematics   University of Waterloo  Sep 2024 — Aug 2025  \n Honours BSc Computer Science and Mathematics   University of Ottawa  Sep 2018 — May 2023  \n\n\nWork Experience\n Data Engineering Intern  National Research Council of Canada — Automotive and Surface Transportation Centre  May 2022 — Dec 2022 | Ottawa, ON   \n Data Science Intern  Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)  Sep 2021 — Dec 2021 | Ottawa,ON   \n Data Science Intern   Novartis AG   May 2020 — Dec 2020 | Remote  \n\n\n\nExtra Curricular Experience\n Software Engineering Team Lead  Engineering Competition Team — UO Supermileage  Sep 2021 — Sep 2022  \n Printed Circuit Board Designer  Engineering Competition Team — UO Supermileage  Jan 2019 — Sep 2021"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Omar Hayat",
     "section": "",
-    "text": "I am an incoming MMath in Computational Mathematics student at the University of Waterloo in Fall 2024.\nI am co-supervised by Dr. Giang Tran and Dr. Saeed Ghadimi\nI am in the process of building my theoretical foundation and finding research direction in the areas of optimization and machine learning.\nMy long term goal is to be an active researcher in these spaces.\n\n\nEducation\n  MMath Computational Mathematics    University of Waterloo  Sep 2024 — Aug 2025  \n Honours BSc Computer Science and Mathematics   University of Ottawa  Sep 2018 — May 2023  \n\n\n\nWork Experience\n Data Engineering Intern  National Research Council of Canada — Automotive and Surface Transportation Centre  May 2022 — Dec 2022 | Ottawa, ON   \n Data Science Intern   Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)   Sep 2021 — Dec 2021 | Ottawa,ON   \n Data Science Intern    Novartis Pharmaceuticals    May 2020 — Dec 2020 | Remote  \n\n\n\nExtra Curricular Experience\n Software Engineering Team Lead   Engineering Competition Team — UO Supermileage   Sep 2021 — Sep 2022  \n Printed Circuit Board Designer   Engineering Competition Team — UO Supermileage   Jan 2019 — Sep 2021"
+    "text": "I am an incoming MMath in Computational Mathematics student at the University of Waterloo in Fall 2024.\nI am co-supervised by Dr. Giang Tran and Dr. Saeed Ghadimi\nI am in the process of building my theoretical foundation and finding research direction in the areas of optimization and machine learning.\nMy long term goal is to be an active researcher in these spaces.\nLink this text to another .qmd file\n\n\nEducation\n  MMath Computational Mathematics    University of Waterloo  Sep 2024 — Aug 2025  \n Honours BSc Computer Science and Mathematics   University of Ottawa  Sep 2018 — May 2023  \n\n\n\nWork Experience\n Data Engineering Intern  National Research Council of Canada — Automotive and Surface Transportation Centre  May 2022 — Dec 2022 | Ottawa, ON   \n Data Science Intern   Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)   Sep 2021 — Dec 2021 | Ottawa,ON   \n Data Science Intern    Novartis Pharmaceuticals    May 2020 — Dec 2020 | Remote  \n\n\n\nExtra Curricular Experience\n Software Engineering Team Lead   Engineering Competition Team — UO Supermileage   Sep 2021 — Sep 2022  \n Printed Circuit Board Designer   Engineering Competition Team — UO Supermileage   Jan 2019 — Sep 2021"
   }
 ]
