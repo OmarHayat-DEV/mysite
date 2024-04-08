@@ -69,10 +69,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">About Me</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -116,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="work-experience" class="level5">
 <h5 data-anchor-id="work-experience">Work Experience</h5>
-<p><span style="font-size:0.85em;"> <strong>Data Engineering Intern</strong><br> <span style="font-size:0.95em;"> <em>National Research Council of Canada — Automotive and Surface Transportation Centre</em> <br> <em>May 2022 — Dec 2022 | Ottawa, ON </em> </span> </span></p>
+<p><span style="font-size:0.85em;"> <strong>Data Engineering Intern</strong><br> <span style="font-size:0.95em;"> <a onclick="window.open('https://fintrac-canafe.canada.ca/intro-eng')" style="cursor: pointer;"> <em>National Research Council of Canada — Automotive and Surface Transportation Centre</em> </a> <br> <em>May 2022 — Dec 2022 | Ottawa, ON </em> </span> </span></p>
 <p><span style="font-size:0.85em;"> <strong>Data Science Intern</strong><br> <span style="font-size:0.95em;"> <a onclick="window.open('https://fintrac-canafe.canada.ca/intro-eng')" style="cursor: pointer;"> <em>Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)</em> </a> <br> <em>Sep 2021 — Dec 2021 | Ottawa,ON </em> </span> </span></p>
 <p><span style="font-size:0.85em;"> <strong>Data Science Intern </strong><br> <span style="font-size:0.95em;"> <a onclick="window.open('https://www.novartis.com/')" style="cursor: pointer;"> <em>Novartis Pharmaceuticals </em> </a> <br> <em>May 2020 — Dec 2020 | Remote</em> </span> </span></p>
 <hr>
@@ -217,7 +213,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/OmarHayat-DEV\.github\.io\/mysite\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

@@ -46,7 +46,9 @@ ___
 <span style="font-size:0.85em;">
 **Data Engineering Intern**<br/>
  <span style="font-size:0.95em;">
- *National Research Council of Canada --- Automotive and Surface Transportation Centre* <br/>
+  <a onclick="window.open('https://fintrac-canafe.canada.ca/intro-eng')" style="cursor: pointer;">
+  *National Research Council of Canada --- Automotive and Surface Transportation Centre* 
+ </a> <br/>
  *May 2022 --- Dec 2022 | Ottawa, ON * 
  </span>
 </span> 
