@@ -18,8 +18,6 @@ I am an incoming **MMath in Computational Mathematics** student at the **Univers
 I am co-supervised by <a  onclick="window.open('https://uwaterloo.ca/scholar/g6tran/home')" style="cursor: pointer;">**Dr. Giang Tran**</a> and <a  onclick="window.open('https://www.saeedghadimi.com/home')" style="cursor: pointer;">**Dr. Saeed Ghadimi**</a> 
 
 I am in the process of building my theoretical foundation and finding research direction in the areas of **optimization** and **machine learning**. 
-
-My long term goal is to be an active researcher in these spaces.
  
 ___
 ##### Education 
