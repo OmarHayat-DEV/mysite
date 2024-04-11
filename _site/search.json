@@ -7,34 +7,6 @@
     "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nApr 9, 2024\n\n\nDay 1\n\n\nOmar Hayat\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/test.html",
-    "href": "posts/test.html",
-    "title": "Toward a Unified Theory of High-Energy Metaphysics: Silly String Theory",
-    "section": "",
-    "text": "body text here\n\n\nmore text ehre"
-  },
-  {
-    "objectID": "posts/test.html#sub-heading-text-here",
-    "href": "posts/test.html#sub-heading-text-here",
-    "title": "Toward a Unified Theory of High-Energy Metaphysics: Silly String Theory",
-    "section": "",
-    "text": "more text ehre"
-  },
-  {
-    "objectID": "posts/about.html",
-    "href": "posts/about.html",
-    "title": "Omar Hayat",
-    "section": "",
-    "text": "I am an incoming MMath in Computational Mathematics student at the University of Waterloo.\nMy supervisors are Dr. Giang Tran and Dr. Saeed Ghadimi.\nI obtained my BSc in Computer Science and Mathematics from the University of Ottawa. #### Brief CV ___ ##### Education  MMath Computational Mathematics   University of Waterloo  Sep 2024 — Aug 2025  \n Honours BSc Computer Science and Mathematics   University of Ottawa  Sep 2018 — May 2023  \n\n\nWork Experience\n Data Engineering Intern  National Research Council of Canada — Automotive and Surface Transportation Centre  May 2022 — Dec 2022 | Ottawa, ON   \n Data Science Intern  Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)  Sep 2021 — Dec 2021 | Ottawa,ON   \n Data Science Intern   Novartis AG   May 2020 — Dec 2020 | Remote  \n\n\n\nExtra Curricular Experience\n Software Engineering Team Lead  Engineering Competition Team — UO Supermileage  Sep 2021 — Sep 2022  \n Printed Circuit Board Designer  Engineering Competition Team — UO Supermileage  Jan 2019 — Sep 2021"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Omar Hayat",
-    "section": "",
-    "text": "I am an incoming MMath in Computational Mathematics student at the University of Waterloo in Fall 2024.\nI am co-supervised by Dr. Giang Tran and Dr. Saeed Ghadimi\nI am in the process of building my theoretical foundation and finding research direction in the areas of optimization and machine learning.\nMy long term goal is to be an active researcher in these spaces.\n\n\nEducation\n  MMath Computational Mathematics    University of Waterloo  Sep 2024 — Aug 2025  \n Honours BSc Computer Science and Mathematics   University of Ottawa  Sep 2018 — May 2023  \n\n\n\nWork Experience\n Data Engineering Intern   National Research Council of Canada — Automotive and Surface Transportation Centre   May 2022 — Dec 2022 | Ottawa, ON   \n Data Science Intern   Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)   Sep 2021 — Dec 2021 | Ottawa,ON   \n Data Science Intern    Novartis Pharmaceuticals    May 2020 — Dec 2020 | Remote  \n\n\n\nExtra Curricular Experience\n Software Engineering Team Lead   Engineering Competition Team — UO Supermileage   Sep 2021 — Sep 2022  \n Printed Circuit Board Designer   Engineering Competition Team — UO Supermileage   Jan 2019 — Sep 2021"
-  },
-  {
     "objectID": "posts/test/test.html",
     "href": "posts/test/test.html",
     "title": "Day 1",
@@ -42,66 +14,10 @@
     "text": "Outline\n\nLC 5 Longest Palindromic Substring\nLC 185 Department Top Three Salaries\nBrain stellar: Rolling the Bullet\n\n\n\nLC 5 Longest Palindromic Substring\nLink\nGiven a string s, return the longest palindromic substring in s.\nExample 1:\nInput: s = “babad”  Output: “bab”  Explanation: “aba” is also a valid answer. \nExample 2:\nInput: s = “cbbd”  Output: “bb” \nSolution: \n\nRecall what it means to be a palindrome :\n\nthe string s is the same forwards as it is backwards \neach palindrome has a centre \n\nfor odd palindromes, the centre is of the form : (str)-(char)-(str)\nfor even palindromes, the centre is of the form : (str)-(char)(char)-(str)\n\n\nEach character in the string s, namely s[i], is a candidate for the centre for longest palindromic substring\nEach adjacent pair of characters in the string s, namely s[i:i+1], is a candidate for the centre for longest palindromic substring\nConsider the \\(n\\,\\times\\,n\\) matrix, where each entry \\(a_{ij}\\) corresponds to the substring of s starting at \\(i\\text{-th}\\) character in s and ending at the \\(j\\text{-th}\\) character in s\n\n\\[\\begin{bmatrix}\\;\\; s _{00} & \\dots & s _{0n}  \\;\\; \\\\ \\;\\; \\vdots & \\ddots & \\vdots  \\;\\; \\\\  \\;\\; s _{n 0} & \\dots  & s _{n n}  \\;\\; \\end{bmatrix}\\]\nFor example\n\n\\(s _{00} = s[0]\\)\n\\(s _{0n} = s\\)\n\\(s _{n n} = s[-1]\\)\n\nNote: The entries \\(s _{ij}\\,\\) where \\(i&lt;j\\) carry no interpretation\n\nNow, assign to each entry \\(s _{ij}\\,\\) a boolean value, which is true if the substring represented by \\(s _{ij}\\,\\) is a palindrome and false if the substring represented by \\(s _{ij}\\,\\) is not a palindrome\nClearly, all entries of the form \\(s _{i i}\\,\\) are assigned true, because they representing the character at position \\(i\\) in the string s\nEntries of the form \\(s _{i(i+1)}\\,\\) are assigned true only when \\(s[i]=s[i+1]\\,\\)\nConsider the sub-matrix\n\n\\[\\begin{bmatrix}\\;\\; s _{i(j-1)} & \\textcolor{blue}{s _{ij}}  \\;\\; \\\\ \\;\\;  s _{(i+1)(j-1)} & s _{(i+1)j} \\;\\;  \\end{bmatrix}\\]\nthe substring \\(\\color{blue}s _{ij}\\) is only a palindrome if \\(s[i]=s[j]\\) and the substring \\(s _{(i+1)(j-1)}\\) is a palindrome\nVisually it looks like this:\n\\[\\color{red}s_{i}\\color{blue}\\underbrace{{s _{i+1}\\dots s _{j-1}}}_{s _{(i+1)(j-1)}} \\color{red}s_{j}\\]\n\nTo answer the question, is this substring a palindrome for any substring \\(\\color{blue}s _{ij}\\,\\) we check if the \\(s _{(i+1)(j-1)}\\) entry in the matrix is true and if \\(s[i]=s[j]\\)\nAlgorithm :\n\ninitialize an \\(n \\,\\times\\,n\\) matrix where \\(n\\,\\) is the length of the string \\(s\\)\n\ninitialize its entries to false\n\ninitialize a list of length 2\n\nto store the longest encountered palindromic substring\n\nfor the loops below, we keep track of the longest\nset the diagonal of the matrix to true\nset the substrings of length 2 to true if they are a palindrome\nset the substrings of length 3 to \\(n\\,\\) to true if they are palindromic\n\nNote we follow a diagonal pattern to accomplish this\n\nour first loop fills the main diagonal\n\n\\[\\begin{bmatrix}\\;\\; \\textcolor{blue}{s _{00}} & \\dots & s _{0n}  \\;\\; \\\\ \\;\\; * & \\textcolor{blue}{\\ddots} & \\vdots  \\;\\; \\\\  \\;\\; *  & *  & \\textcolor{blue}{s _{n n}}  \\;\\; \\end{bmatrix}\\]\n\nour second loop fills the first off diagonal right of the main\n\n\\[ \\begin{bmatrix}\\;\\; s _{00} & \\textcolor{blue}{s _{01}} & \\dots & s _{0n}  \\;\\; \\\\ \\;\\; * & \\ddots & \\textcolor{blue}{\\ddots}  & \\vdots  \\;\\; \\\\ \\;\\; * & *  & \\ddots  & \\textcolor{blue}{s _{(n-1)n}}  \\;\\; \\\\ \\;\\; *  & *  & * & s _{n n}  \\;\\; \\end{bmatrix}\\]\n\nour third loop fills from the third off diagonal right of the main to the n-th diagonal right of the main\n\n\n\n\n\n    def longestPalindrome(self,s)-&gt;str:\n        n = len(s)\n        dp = [[False]*n for _ in range(n)]\n        ans = [0,0]\n    \n        for i in range(n):\n            dp[i][i] = True\n    \n        for i in range(n-1):\n            if s[i]==s[i+1]:\n                dp[i][i+1]=True\n                ans = [i,i+1]\n    \n        for diff in range(2,n):\n            for i in range(n-diff):\n                j = i + diff\n                if s[i] == s[j] and dp[i+1][j-1]:\n                    dp[i][j] = True\n                    ans = [i,j]\n    \n        i,j = ans\n        return s[i:j+1]\n\n\n\nLC 185 Department Top Three Salaries\n\n\nBrain stellar: Rolling the Bullet"
   },
   {
-    "objectID": "posts/test/test.html#sub-heading-text-here",
-    "href": "posts/test/test.html#sub-heading-text-here",
-    "title": "Day 1",
-    "section": "",
-    "text": "more text ehre"
-  },
-  {
-    "objectID": "posts/about/about.html",
-    "href": "posts/about/about.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Omar Hayat",
     "section": "",
-    "text": "I am an incoming MMath in Computational Mathematics student at the University of Waterloo.\nMy supervisors are Dr. Giang Tran and Dr. Saeed Ghadimi.\nI obtained my BSc in Computer Science and Mathematics from the University of Ottawa. #### Brief CV ___ ##### Education  MMath Computational Mathematics   University of Waterloo  Sep 2024 — Aug 2025  \n Honours BSc Computer Science and Mathematics   University of Ottawa  Sep 2018 — May 2023  \n\n\nWork Experience\n Data Engineering Intern  National Research Council of Canada — Automotive and Surface Transportation Centre  May 2022 — Dec 2022 | Ottawa, ON   \n Data Science Intern  Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)  Sep 2021 — Dec 2021 | Ottawa,ON   \n Data Science Intern   Novartis AG   May 2020 — Dec 2020 | Remote  \n\n\n\nExtra Curricular Experience\n Software Engineering Team Lead  Engineering Competition Team — UO Supermileage  Sep 2021 — Sep 2022  \n Printed Circuit Board Designer  Engineering Competition Team — UO Supermileage  Jan 2019 — Sep 2021"
-  },
-  {
-    "objectID": "posts/test/test.html#lc",
-    "href": "posts/test/test.html#lc",
-    "title": "Day 1",
-    "section": "",
-    "text": "more text ehre"
-  },
-  {
-    "objectID": "posts/test/test.html#lc-5-longest-pal",
-    "href": "posts/test/test.html#lc-5-longest-pal",
-    "title": "Day 1",
-    "section": "",
-    "text": "more text ehre"
-  },
-  {
-    "objectID": "posts/test/test.html#lc-5-longest-palindromic-s",
-    "href": "posts/test/test.html#lc-5-longest-palindromic-s",
-    "title": "Day 1",
-    "section": "",
-    "text": "more text ehre"
-  },
-  {
-    "objectID": "posts/test/test.html#lc-5-longest-palindromic-substring",
-    "href": "posts/test/test.html#lc-5-longest-palindromic-substring",
-    "title": "Day 1",
-    "section": "",
-    "text": "Link\nGiven a string s, return the longest palindromic substring in s.\nExample 1:\nInput: s = “babad”  Output: “bab”  Explanation: “aba” is also a valid answer. \nExample 2:\nInput: s = “cbbd”  Output: “bb” \nSolution: \n\nRecall what it means to be a palindrome :\n\nthe string s is the same forwards as it is backwards \neach palindrome has a centre \n\nfor odd palindromes, the centre is of the form : (str)-(char)-(str)\nfor even palindromes, the centre is of the form : (str)-(char)(char)-(str)\n\n\nEach character in the string s, namely s[i], is a candidate for the centre for longest palindromic substring\nEach adjacent pair of characters in the string s, namely s[i:i+1], is a candidate for the centre for longest palindromic substring\nConsider the \\(n\\,\\times\\,n\\) matrix, where each entry \\(a_{ij}\\) corresponds to the substring of s starting at \\(i\\text{-th}\\) character in s and ending at the \\(j\\text{-th}\\) character in s\n\n\\[\\begin{bmatrix}\\;\\; s _{00} & \\dots & s _{0n}  \\;\\; \\\\ \\;\\; \\vdots & \\ddots & \\vdots  \\;\\; \\\\  \\;\\; s _{n 0} & \\dots  & s _{n n}  \\;\\; \\end{bmatrix}\\]\nFor example\n\n\\(s _{00} = s[0]\\)\n\\(s _{0n} = s\\)\n\\(s _{n n} = s[-1]\\)\n\nNote: The entries \\(s _{ij}\\,\\) where \\(i&lt;j\\) carry no interpretation\n\nNow, assign to each entry \\(s _{ij}\\,\\) a boolean value, which is true if the substring represented by \\(s _{ij}\\,\\) is a palindrome and false if the substring represented by \\(s _{ij}\\,\\) is not a palindrome\nClearly, all entries of the form \\(s _{i i}\\,\\) are assigned true, because they representing the character at position \\(i\\) in the string s\nEntries of the form \\(s _{i(i+1)}\\,\\) are assigned true only when \\(s[i]=s[i+1]\\,\\)\nConsider the sub-matrix\n\n\\[\\begin{bmatrix}\\;\\; s _{i(j-1)} & \\textcolor{blue}{s _{ij}}  \\;\\; \\\\ \\;\\;  s _{(i+1)(j-1)} & s _{(i+1)j} \\;\\;  \\end{bmatrix}\\]\nthe substring \\(\\color{blue}s _{ij}\\) is only a palindrome if \\(s[i]=s[j]\\) and the substring \\(s _{(i+1)(j-1)}\\) is a palindrome\nVisually it looks like this:\n\\[\\color{red}s_{i}\\color{blue}\\underbrace{{s _{i+1}\\dots s _{j-1}}}_{s _{(i+1)(j-1)}} \\color{red}s_{j}\\]\n\nTo answer the question, is this substring a palindrome for any substring \\(\\color{blue}s _{ij}\\,\\) we check if the \\(s _{(i+1)(j-1)}\\) entry in the matrix is true and if \\(s[i]=s[j]\\)\nAlgorithm :\n\ninitialize an \\(n \\,\\times\\,n\\) matrix where \\(n\\,\\) is the length of the string \\(s\\)\n\ninitialize its entries to false\n\ninitialize a list of length 2\n\nto store the longest encountered palindromic substring\n\nfor the loops below, we keep track of the longest\nset the diagonal of the matrix to true\nset the substrings of length 2 to true if they are a palindrome\nset the substrings of length 3 to \\(n\\,\\) to true if they are palindromic\n\nNote we follow a diagonal pattern to accomplish this\n\nour first loop fills the main diagonal\n\n\\[\\begin{bmatrix}\\;\\; \\textcolor{blue}{s _{00}} & \\dots & s _{0n}  \\;\\; \\\\ \\;\\; * & \\textcolor{blue}{\\ddots} & \\vdots  \\;\\; \\\\  \\;\\; *  & *  & \\textcolor{blue}{s _{n n}}  \\;\\; \\end{bmatrix}\\]\n\nour second loop fills the first off diagonal right of the main\n\n\\[ \\begin{bmatrix}\\;\\; s _{00} & \\textcolor{blue}{s _{01}} & \\dots & s _{0n}  \\;\\; \\\\ \\;\\; * & \\ddots & \\textcolor{blue}{\\ddots}  & \\vdots  \\;\\; \\\\ \\;\\; * & *  & \\ddots  & \\textcolor{blue}{s _{(n-1)n}}  \\;\\; \\\\ \\;\\; *  & *  & * & s _{n n}  \\;\\; \\end{bmatrix}\\]\n\nour third loop fills from the third off diagonal right of the main to the n-th diagonal right of the main\n\n\n\n\n    def longestPalindrome(self,s)-&gt;str:\n        n = len(s)\n        dp = [[False]*n for _ in range(n)]\n        ans = [0,0]\n    \n        for i in range(n):\n            dp[i][i] = True\n    \n        for i in range(n-1):\n            if s[i]==s[i+1]:\n                dp[i][i+1]=True\n                ans = [i,i+1]\n    \n        for diff in range(2,n):\n            for i in range(n-diff):\n                j = i + diff\n                if s[i] == s[j] and dp[i+1][j-1]:\n                    dp[i][j] = True\n                    ans = [i,j]\n    \n        i,j = ans\n        return s[i:j+1]"
-  },
-  {
-    "objectID": "posts/test/test.html#recall-what-it-means-to-be-a-palindrome",
-    "href": "posts/test/test.html#recall-what-it-means-to-be-a-palindrome",
-    "title": "Day 1",
-    "section": "",
-    "text": "def longestPalindrome(self,s)-&gt;str:\n        n = len(s)\n        dp = [[False]*n for _ in range(n)]\n        ans = [0,0]\n    \n        for i in range(n):\n            dp[i][i] = True\n    \n        for i in range(n-1):\n            if s[i]==s[i+1]:\n                dp[i][i+1]=True\n                ans = [i,i+1]\n    \n        for diff in range(2,n):\n            for i in range(n-diff):\n                j = i + diff\n                if s[i] == s[j] and dp[i+1][j-1]:\n                    dp[i][j] = True\n                    ans = [i,j]\n    \n        i,j = ans\n        return s[i:j+1]"
-  },
-  {
-    "objectID": "posts/test/test.html#lc-185-department-top-three-salaries",
-    "href": "posts/test/test.html#lc-185-department-top-three-salaries",
-    "title": "Day 1",
-    "section": "LC 185 Department Top Three Salaries",
-    "text": "LC 185 Department Top Three Salaries"
-  },
-  {
-    "objectID": "posts/test/test.html#brain-stellar-rolling-the-bullet",
-    "href": "posts/test/test.html#brain-stellar-rolling-the-bullet",
-    "title": "Day 1",
-    "section": "Brain stellar: Rolling the Bullet",
-    "text": "Brain stellar: Rolling the Bullet"
+    "text": "I am an incoming MMath in Computational Mathematics student at the University of Waterloo in Fall 2024.\nI am co-supervised by Dr. Giang Tran and Dr. Saeed Ghadimi\nI am in the process of building my theoretical foundation and finding research direction in the areas of optimization and machine learning.\nMy long term goal is to be an active researcher in these spaces.\n\n\nEducation\n  MMath Computational Mathematics    University of Waterloo  Sep 2024 — Aug 2025  \n Honours BSc Computer Science and Mathematics   University of Ottawa  Sep 2018 — May 2023  \n\n\n\nWork Experience\n Data Engineering Intern   National Research Council of Canada — Automotive and Surface Transportation Centre   May 2022 — Dec 2022 | Ottawa, ON   \n Data Science Intern   Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)   Sep 2021 — Dec 2021 | Ottawa,ON   \n Data Science Intern    Novartis Pharmaceuticals    May 2020 — Dec 2020 | Remote  \n\n\n\nExtra Curricular Experience\n Software Engineering Team Lead   Engineering Competition Team — UO Supermileage   Sep 2021 — Sep 2022  \n Printed Circuit Board Designer   Engineering Competition Team — UO Supermileage   Jan 2019 — Sep 2021"
   }
 ]
