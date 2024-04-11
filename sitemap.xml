@@ -2,18 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://OmarHayat-DEV.github.io/mysite/blog.html</loc>
-    <lastmod>2024-04-01T03:14:40.043Z</lastmod>
+    <lastmod>2024-04-09T14:55:56.821Z</lastmod>
   </url>
   <url>
-    <loc>https://OmarHayat-DEV.github.io/mysite/posts/test.html</loc>
-    <lastmod>2024-04-01T18:48:28.074Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OmarHayat-DEV.github.io/mysite/posts/about.html</loc>
-    <lastmod>2024-04-01T18:47:19.489Z</lastmod>
+    <loc>https://OmarHayat-DEV.github.io/mysite/posts/test/test.html</loc>
+    <lastmod>2024-04-11T03:09:17.232Z</lastmod>
   </url>
   <url>
     <loc>https://OmarHayat-DEV.github.io/mysite/index.html</loc>
-    <lastmod>2024-04-08T14:35:15.332Z</lastmod>
+    <lastmod>2024-04-09T20:11:54.727Z</lastmod>
   </url>
 </urlset>
