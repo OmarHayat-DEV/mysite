@@ -1,0 +1,119 @@
+---
+title: "Day 1"
+date: 2024-04-09  
+author:
+  - name: Omar Hayat 
+
+# abstract: > 
+#  The characteristic theme of the works of Stone is 
+#  the bridge between culture and society. ...
+  
+keywords:
+  - Leetcode
+  - SQL
+  - Probability
+  
+categories: [leetcode, sql, probability]
+
+format: html
+    
+highlight-style: github
+
+
+---
+
+# Outline
+
+- **LC 5 Longest Palindromic Substring**
+
+- **LC 185 Department Top Three Salaries**
+
+- **Brain stellar: Rolling the Bullet**
+
+# LC 5 Longest Palindromic Substring 
+
+<a  onclick="window.open('https://leetcode.com/problems/longest-palindromic-substring/description/')" style="cursor: pointer;">**Link**</a>
+
+Given a string `s`, return the longest palindromic substring  in `s`. 
+
+**Example 1:**
+
+**Input:** s = "babad" <br>
+**Output:** "bab" <br>
+**Explanation:** "aba" is also a valid answer. <br>
+
+**Example 2:**
+
+**Input:** s = "cbbd" <br>
+**Output:** "bb" <br>
+
+**Solution:**  <br>
+
+1. Recall what it means to be a `palindrome` :
+	- the string `s` is the same forwards as it is backwards <br>
+	- each palindrome has a centre <br>
+		- for *odd* palindromes, the centre is of the form : (str)-(char)-(str) 
+		- for *even* palindromes, the centre is of the form : (str)-(char)(char)-(str)
+2. Each character in the string `s`, namely `s[i]`, is a candidate for the centre for longest palindromic substring
+3. Each adjacent pair of characters in the string `s`, namely `s[i:i+1]`, is a candidate for the centre for longest palindromic substring
+4. Consider the $n\,\times\,n$ matrix, where each entry $a_{ij}$ corresponds to the substring of `s` starting at $i\text{-th}$ character in `s` and ending at the $j\text{-th}$ character in `s`
+	- $$\begin{bmatrix}\;\; s _{00} & \dots & s _{0n}  \;\; \\ \;\; \vdots & \ddots & \vdots  \;\; \\  \;\; s _{n 0} & \dots  & s _{n n}  \;\; \end{bmatrix}$$
+	- For example 
+		- $s _{00} = s[0]$
+		- $s _{0n} = s$
+		- $s _{n n} = s[-1]$
+	- **Note:** The entries $s _{ij}\,$ where $i<j$ carry no interpretation 
+5. Now, assign to each entry $s _{ij}\,$ a boolean value, which is *true* if the substring represented by $s _{ij}\,$ is a palindrome and *false* if the substring represented by $s _{ij}\,$ is not a palindrome
+6. Clearly, all entries of the form $s _{i i}\,$ are assigned true, because they representing the character at position $i$ in the string `s` 
+7. Entries of the form $s _{i(i+1)}\,$ are assigned true only when $s[i]=s[i+1]\,$ 
+8. Consider the sub-matrix
+	- $$\begin{bmatrix}\;\; s _{i(j-1)} & \textcolor{blue}{s _{ij}}  \;\; \\ \;\;  s _{(i+1)(j-1)} & s _{(i+1)j} \;\;  \end{bmatrix}$$
+	- the substring $\color{blue}s _{ij}$ is only a palindrome if $s[i]=s[j]$ and the substring $s _{(i+1)(j-1)}$ is a palindrome
+	- Visually it looks like this:
+	- $$\color{red}s_{i}\color{blue}\underbrace{{s _{i+1}\dots s _{j-1}}}_{s _{(i+1)(j-1)}} \color{red}s_{j}$$
+9. To answer the question, *is this substring a palindrome* for any substring $\color{blue}s _{ij}\,$ we check if the $s _{(i+1)(j-1)}$ entry in the matrix is true and if $s[i]=s[j]$
+10. **Algorithm** :
+	- initialize an $n \,\times\,n$ matrix where $n\,$ is the length of the string $s$
+		- initialize its entries to false
+	- initialize a list of length 2 
+		- to store the longest encountered palindromic substring
+	- for the loops below, we keep track of the longest 
+	- set the diagonal of the matrix to true
+	- set the substrings of length 2 to true if they are a palindrome 
+	- set the substrings of length 3 to $n\,$ to true if they are palindromic
+		- **Note** we follow a diagonal pattern to accomplish this
+			- our first loop fills the main diagonal
+				- $$\begin{bmatrix}\;\; \textcolor{blue}{s _{00}} & \dots & s _{0n}  \;\; \\ \;\; * & \textcolor{blue}{\ddots} & \vdots  \;\; \\  \;\; *  & *  & \textcolor{blue}{s _{n n}}  \;\; \end{bmatrix}$$
+			- our second loop fills the first off diagonal right of the main
+				- $$ \begin{bmatrix}\;\; s _{00} & \textcolor{blue}{s _{01}} & \dots & s _{0n}  \;\; \\ \;\; * & \ddots & \textcolor{blue}{\ddots}  & \vdots  \;\; \\ \;\; * & *  & \ddots  & \textcolor{blue}{s _{(n-1)n}}  \;\; \\ \;\; *  & *  & * & s _{n n}  \;\; \end{bmatrix}$$
+			- our third loop fills from the third off diagonal right of the main to the n-th diagonal right of the main 
+```{python}
+	def longestPalindrome(self,s)->str:
+	    n = len(s)
+	    dp = [[False]*n for _ in range(n)]
+	    ans = [0,0]
+	
+	    for i in range(n):
+	        dp[i][i] = True
+	
+	    for i in range(n-1):
+	        if s[i]==s[i+1]:
+	            dp[i][i+1]=True
+	            ans = [i,i+1]
+	
+	    for diff in range(2,n):
+	        for i in range(n-diff):
+	            j = i + diff
+	            if s[i] == s[j] and dp[i+1][j-1]:
+	                dp[i][j] = True
+	                ans = [i,j]
+	
+	    i,j = ans
+	    return s[i:j+1]
+```
+
+
+# LC 185 Department Top Three Salaries
+
+
+# Brain stellar: Rolling the Bullet 

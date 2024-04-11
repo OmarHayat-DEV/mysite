@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Daily Problems"
 listing: 
   contents: posts
   type: table # or `default` or `table`; each type has its own set of yaml options to include

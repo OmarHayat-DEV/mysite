@@ -17,5 +17,13 @@
   },
   "posts/test.qmd": {
     "test.html": "26f0bfe3"
+  },
+  "posts/test/test.qmd": {
+    "test.html": "acc8d786",
+    "test.tex": "012178ec",
+    "test.md": "ebf49c43"
+  },
+  "posts/about/about.qmd": {
+    "about.html": "edbd3c87"
   }
 }
