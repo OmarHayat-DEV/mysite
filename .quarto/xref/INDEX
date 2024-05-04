@@ -25,5 +25,17 @@
   },
   "posts/about/about.qmd": {
     "about.html": "edbd3c87"
+  },
+  "posts/2024_04_08/2024_04_08.qmd": {
+    "2024_04_08.html": "f7378a29"
+  },
+  "posts/2024_04_08/post.qmd": {
+    "post.html": "c093df56"
+  },
+  "posts/2024_04/08.qmd": {
+    "08.html": "504a8dd4"
+  },
+  "posts/2024_04/09.qmd": {
+    "09.html": "8aa19286"
   }
 }

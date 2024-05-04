@@ -1,0 +1,38 @@
+---
+title: "Day 2"
+date: 2024-04-09 
+author:
+  - name: Omar Hayat 
+
+# abstract: > 
+#  The characteristic theme of the works of Stone is 
+#  the bridge between culture and society. ...
+  
+keywords:
+  - Leetcode
+  - SQL
+  
+categories: [leetcode, sql]
+
+format: html
+
+---
+
+# Outline
+
+- **LC 647 Palindromic Substring**
+- **LC 262 Trips and Users**
+
+
+# LC 647 Palindromic Substring
+
+<a  onclick="window.open('https://leetcode.com/problems/palindromic-substrings/description/')" style="cursor: pointer;">**Link**</a>
+
+
+Given a string `s`, return _the number of **palindromic substrings** in it_.
+
+A string is a **palindrome** when it reads the same backward as forward.
+
+A **substring** is a contiguous sequence of characters within the string.
+
+
