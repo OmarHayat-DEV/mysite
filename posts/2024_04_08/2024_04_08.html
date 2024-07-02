@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Omar Hayat">
+<meta name="dcterms.date" content="2024-04-09">
+<meta name="keywords" content="Leetcode, SQL, Probability">
 
-<title>Omar Hayat</title>
+<title>Day 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,20 +23,55 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -50,11 +88,40 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -66,11 +133,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Daily Problems</span></a>
   </li>  
 </ul>
@@ -90,58 +157,179 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#outline" id="toc-outline" class="nav-link active" data-scroll-target="#outline">Outline</a></li>
+  <li><a href="#lc-5-longest-palindromic-substring" id="toc-lc-5-longest-palindromic-substring" class="nav-link" data-scroll-target="#lc-5-longest-palindromic-substring">LC 5 Longest Palindromic Substring</a></li>
+  <li><a href="#lc-185-department-top-three-salaries" id="toc-lc-185-department-top-three-salaries" class="nav-link" data-scroll-target="#lc-185-department-top-three-salaries">LC 185 Department Top Three Salaries</a></li>
+  <li><a href="#brain-stellar-rolling-the-bullet" id="toc-brain-stellar-rolling-the-bullet" class="nav-link" data-scroll-target="#brain-stellar-rolling-the-bullet">Brain stellar: Rolling the Bullet</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-marquee content">
-  <div class="about-image-container">
-  </div>
-  <div class="about-contents">
-    <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Omar Hayat</h1>
-</div>
+<h1 class="title">Day 1</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">leetcode</div>
+    <div class="quarto-category">sql</div>
+    <div class="quarto-category">probability</div>
+  </div>
+  </div>
+
+
+
 <div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Omar Hayat </p>
+          </div>
   </div>
-</header> <main class="content" id="quarto-document-content">
-<p>I am an incoming <strong>MMath in Computational Mathematics</strong> student at the <strong>University of Waterloo</strong> in <strong>Fall 2024</strong>.</p>
-<p>I am co-supervised by <a onclick="window.open('https://uwaterloo.ca/scholar/g6tran/home')" style="cursor: pointer;"><strong>Dr.&nbsp;Giang Tran</strong></a> and <a onclick="window.open('https://www.saeedghadimi.com/home')" style="cursor: pointer;"><strong>Dr.&nbsp;Saeed Ghadimi</strong></a></p>
-<p>I am in the process of building my theoretical foundation and finding research direction in the areas of <strong>optimization</strong> and <strong>machine learning</strong>.</p>
-<hr>
-<section id="education" class="level5">
-<h5 data-anchor-id="education">Education</h5>
-<p><span style="font-size: 0.85em;"> <a onclick="window.open('https://uwaterloo.ca/computational-mathematics/current-masters-students/degree-requirements')" style="cursor: pointer;"> <strong>MMath Computational Mathematics</strong> </a> <br> <span style="font-size:0.95em;"> <em>University of Waterloo</em> <br> <em>Sep 2024 — Aug 2025</em> </span> </span></p>
-<p><span style="font-size:0.85em;"> <strong>Honours BSc Computer Science and Mathematics</strong> <br> <span style="font-size:0.95em;"> <em>University of Ottawa</em> <br> <em>Sep 2018 — May 2023</em> </span> </span></p>
-<hr>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 9, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>Leetcode, SQL, Probability</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="outline" class="level1">
+<h1>Outline</h1>
+<ul>
+<li><p><strong>LC 5 Longest Palindromic Substring</strong></p></li>
+<li><p><strong>LC 185 Department Top Three Salaries</strong></p></li>
+<li><p><strong>Brain stellar: Rolling the Bullet</strong></p></li>
+</ul>
 </section>
-<section id="work-experience" class="level5">
-<h5 data-anchor-id="work-experience">Work Experience</h5>
-<p><span style="font-size:0.85em;"> <strong>Data Engineering Intern</strong><br> <span style="font-size:0.95em;"> <a onclick="window.open('https://nrc.canada.ca/en/research-development/research-collaboration/research-centres/automotive-surface-transportation-research-centre')" style="cursor: pointer;"> <em>National Research Council of Canada — Automotive and Surface Transportation Centre</em> </a> <br> <em>May 2022 — Dec 2022 | Ottawa, ON </em> </span> </span></p>
-<p><span style="font-size:0.85em;"> <strong>Data Science Intern</strong><br> <span style="font-size:0.95em;"> <a onclick="window.open('https://fintrac-canafe.canada.ca/intro-eng')" style="cursor: pointer;"> <em>Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)</em> </a> <br> <em>Sep 2021 — Dec 2021 | Ottawa,ON </em> </span> </span></p>
-<p><span style="font-size:0.85em;"> <strong>Data Science Intern </strong><br> <span style="font-size:0.95em;"> <a onclick="window.open('https://www.novartis.com/')" style="cursor: pointer;"> <em>Novartis Pharmaceuticals </em> </a> <br> <em>May 2020 — Dec 2020 | Remote</em> </span> </span></p>
-<hr>
+<section id="lc-5-longest-palindromic-substring" class="level1">
+<h1>LC 5 Longest Palindromic Substring</h1>
+<p><a onclick="window.open('https://leetcode.com/problems/longest-palindromic-substring/description/')" style="cursor: pointer;"><strong>Link</strong></a></p>
+<p>Given a string <code>s</code>, return the longest palindromic substring in <code>s</code>.</p>
+<p><strong>Example 1:</strong></p>
+<p><strong>Input:</strong> s = “babad” <br> <strong>Output:</strong> “bab” <br> <strong>Explanation:</strong> “aba” is also a valid answer. <br></p>
+<p><strong>Example 2:</strong></p>
+<p><strong>Input:</strong> s = “cbbd” <br> <strong>Output:</strong> “bb” <br></p>
+<p><strong>Solution:</strong> <br></p>
+<ol type="1">
+<li>Recall what it means to be a <code>palindrome</code> :
+<ul>
+<li>the string <code>s</code> is the same forwards as it is backwards <br></li>
+<li>each palindrome has a centre <br>
+<ul>
+<li>for <em>odd</em> palindromes, the centre is of the form : (str)-(char)-(str)</li>
+<li>for <em>even</em> palindromes, the centre is of the form : (str)-(char)(char)-(str)</li>
+</ul></li>
+</ul></li>
+<li>Each character in the string <code>s</code>, namely <code>s[i]</code>, is a candidate for the centre for longest palindromic substring</li>
+<li>Each adjacent pair of characters in the string <code>s</code>, namely <code>s[i:i+1]</code>, is a candidate for the centre for longest palindromic substring</li>
+<li>Consider the <span class="math inline">\(n\,\times\,n\)</span> matrix, where each entry <span class="math inline">\(a_{ij}\)</span> corresponds to the substring of <code>s</code> starting at <span class="math inline">\(i\text{-th}\)</span> character in <code>s</code> and ending at the <span class="math inline">\(j\text{-th}\)</span> character in <code>s</code>
+<ul>
+<li><span class="math display">\[\begin{bmatrix}\;\; s _{00} &amp; \dots &amp; s _{0n}  \;\; \\ \;\; \vdots &amp; \ddots &amp; \vdots  \;\; \\  \;\; s _{n 0} &amp; \dots  &amp; s _{n n}  \;\; \end{bmatrix}\]</span></li>
+<li>For example
+<ul>
+<li><span class="math inline">\(s _{00} = s[0]\)</span></li>
+<li><span class="math inline">\(s _{0n} = s\)</span></li>
+<li><span class="math inline">\(s _{n n} = s[-1]\)</span></li>
+</ul></li>
+<li><strong>Note:</strong> The entries <span class="math inline">\(s _{ij}\,\)</span> where <span class="math inline">\(i&lt;j\)</span> carry no interpretation</li>
+</ul></li>
+<li>Now, assign to each entry <span class="math inline">\(s _{ij}\,\)</span> a boolean value, which is <em>true</em> if the substring represented by <span class="math inline">\(s _{ij}\,\)</span> is a palindrome and <em>false</em> if the substring represented by <span class="math inline">\(s _{ij}\,\)</span> is not a palindrome</li>
+<li>Clearly, all entries of the form <span class="math inline">\(s _{i i}\,\)</span> are assigned true, because they representing the character at position <span class="math inline">\(i\)</span> in the string <code>s</code></li>
+<li>Entries of the form <span class="math inline">\(s _{i(i+1)}\,\)</span> are assigned true only when <span class="math inline">\(s[i]=s[i+1]\,\)</span></li>
+<li>Consider the sub-matrix
+<ul>
+<li><span class="math display">\[\begin{bmatrix}\;\; s _{i(j-1)} &amp; \textcolor{blue}{s _{ij}}  \;\; \\ \;\;  s _{(i+1)(j-1)} &amp; s _{(i+1)j} \;\;  \end{bmatrix}\]</span></li>
+<li>the substring <span class="math inline">\(\color{blue}s _{ij}\)</span> is only a palindrome if <span class="math inline">\(s[i]=s[j]\)</span> and the substring <span class="math inline">\(s _{(i+1)(j-1)}\)</span> is a palindrome</li>
+<li>Visually it looks like this:</li>
+<li><span class="math display">\[\color{red}s_{i}\color{blue}\underbrace{{s _{i+1}\dots s _{j-1}}}_{s _{(i+1)(j-1)}} \color{red}s_{j}\]</span></li>
+</ul></li>
+<li>To answer the question, <em>is this substring a palindrome</em> for any substring <span class="math inline">\(\color{blue}s _{ij}\,\)</span> we check if the <span class="math inline">\(s _{(i+1)(j-1)}\)</span> entry in the matrix is true and if <span class="math inline">\(s[i]=s[j]\)</span></li>
+<li><strong>Algorithm</strong> :
+<ul>
+<li>initialize an <span class="math inline">\(n \,\times\,n\)</span> matrix where <span class="math inline">\(n\,\)</span> is the length of the string <span class="math inline">\(s\)</span>
+<ul>
+<li>initialize its entries to false</li>
+</ul></li>
+<li>initialize a list of length 2
+<ul>
+<li>to store the longest encountered palindromic substring</li>
+</ul></li>
+<li>for the loops below, we keep track of the longest</li>
+<li>set the diagonal of the matrix to true</li>
+<li>set the substrings of length 2 to true if they are a palindrome</li>
+<li>set the substrings of length 3 to <span class="math inline">\(n\,\)</span> to true if they are palindromic
+<ul>
+<li><strong>Note</strong> we follow a diagonal pattern to accomplish this
+<ul>
+<li>our first loop fills the main diagonal
+<ul>
+<li><span class="math display">\[\begin{bmatrix}\;\; \textcolor{blue}{s _{00}} &amp; \dots &amp; s _{0n}  \;\; \\ \;\; * &amp; \textcolor{blue}{\ddots} &amp; \vdots  \;\; \\  \;\; *  &amp; *  &amp; \textcolor{blue}{s _{n n}}  \;\; \end{bmatrix}\]</span></li>
+</ul></li>
+<li>our second loop fills the first off diagonal right of the main
+<ul>
+<li><span class="math display">\[ \begin{bmatrix}\;\; s _{00} &amp; \textcolor{blue}{s _{01}} &amp; \dots &amp; s _{0n}  \;\; \\ \;\; * &amp; \ddots &amp; \textcolor{blue}{\ddots}  &amp; \vdots  \;\; \\ \;\; * &amp; *  &amp; \ddots  &amp; \textcolor{blue}{s _{(n-1)n}}  \;\; \\ \;\; *  &amp; *  &amp; * &amp; s _{n n}  \;\; \end{bmatrix}\]</span></li>
+</ul></li>
+<li>our third loop fills from the third off diagonal right of the main to the n-th diagonal right of the main</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ol>
+<div id="687a7821" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> longestPalindrome(<span class="va">self</span>,s)<span class="op">-&gt;</span><span class="bu">str</span>:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>        n <span class="op">=</span> <span class="bu">len</span>(s)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        dp <span class="op">=</span> [[<span class="va">False</span>]<span class="op">*</span>n <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n)]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        ans <span class="op">=</span> [<span class="dv">0</span>,<span class="dv">0</span>]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            dp[i][i] <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n<span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> s[i]<span class="op">==</span>s[i<span class="op">+</span><span class="dv">1</span>]:</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                dp[i][i<span class="op">+</span><span class="dv">1</span>]<span class="op">=</span><span class="va">True</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                ans <span class="op">=</span> [i,i<span class="op">+</span><span class="dv">1</span>]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> diff <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>,n):</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n<span class="op">-</span>diff):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>                j <span class="op">=</span> i <span class="op">+</span> diff</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> s[i] <span class="op">==</span> s[j] <span class="kw">and</span> dp[i<span class="op">+</span><span class="dv">1</span>][j<span class="op">-</span><span class="dv">1</span>]:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                    dp[i][j] <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>                    ans <span class="op">=</span> [i,j]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        i,j <span class="op">=</span> ans</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> s[i:j<span class="op">+</span><span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="extra-curricular-experience" class="level5">
-<h5 data-anchor-id="extra-curricular-experience">Extra Curricular Experience</h5>
-<p><span style="font-size:0.85em;"> <strong>Software Engineering Team Lead</strong><br> <span style="font-size:0.95em;"> <a onclick="window.open('https://uosupermileage.ca/')" style="cursor: pointer;"> <em>Engineering Competition Team — UO Supermileage</em> </a> <br> <em>Sep 2021 — Sep 2022</em> </span> </span></p>
-<p><span style="font-size:0.85em;"> <strong>Printed Circuit Board Designer</strong><br> <span style="font-size:0.95em;"> <a onclick="window.open('https://uosupermileage.ca/')" style="cursor: pointer;"> <em>Engineering Competition Team — UO Supermileage</em> </a> <br> <em>Jan 2019 — Sep 2021</em> </span> </span></p>
+<section id="lc-185-department-top-three-salaries" class="level1">
+<h1>LC 185 Department Top Three Salaries</h1>
+</section>
+<section id="brain-stellar-rolling-the-bullet" class="level1">
+<h1>Brain stellar: Rolling the Bullet</h1>
 
 
 </section>
-</main> 
-    <div class="about-footer"><div class="about-links">
-  <a href="https://github.com/OmarHayat-DEV/mysite" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://www.linkedin.com/in/omarhayat1/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-</div>
-</div>
-  </div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -162,6 +350,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -216,7 +411,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/OmarHayat-DEV\.github\.io\/mysite\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
