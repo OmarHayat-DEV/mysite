@@ -7,7 +7,7 @@ about:
 #      text: CV
     - icon: github
       text: Github
-      url: https://github.com/OmarHayat-DEV/mysite
+      url: https://github.com/OmarHayat-DEV/
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/omarhayat1/
@@ -15,19 +15,39 @@ about:
 
 I am an incoming **MMath in Computational Mathematics** student at the **University of Waterloo** in **Fall 2024**.
 
-I am co-supervised by <a  onclick="window.open('https://uwaterloo.ca/scholar/g6tran/home')" style="cursor: pointer;">**Dr. Giang Tran**</a> and <a  onclick="window.open('https://www.saeedghadimi.com/home')" style="cursor: pointer;">**Dr. Saeed Ghadimi**</a> 
+I am co-supervised by <a  onclick="window.open('https://uwaterloo.ca/scholar/g6tran/home')" style="cursor: pointer;">**Dr. Giang Tran**</a> and <a  onclick="window.open('https://www.saeedghadimi.com/home')" style="cursor: pointer;">**Dr. Saeed Ghadimi**</a>. 
 
-I am in the process of building my theoretical foundation and finding research direction in the areas of **optimization** and **machine learning**. 
+The research focus of my masters is in **mathematical optimization** and **machine learning** with intention to push the boundaries of applications of these theories to secondary fields of research. 
+
+
+#### Brief background
+The seminal experience that led me to pursue graduate studies came from an undergraduate course on mathematical foundations and logic. There, I first internalized the importance of formal theories of mathematics and their axiomatic approach. 
+
+I felt I finally 'got it', the importance of having good axioms and developing theories from them. They help us say interesting things about the world. 
+
+In fact, I would go further and claim in order to say anything interesting about the world, we need some formal theory to ground it in. Luckily, mathematics offers *a framework* for other fields to adopt for their use cases. 
+
+Indeed, all areas of science, engineering, and the humanities have used mathematics to say something interesting about our world.  
+
+Mathematics is ubiquitous and will remain ubiquitous. 
+
+After that course, I realized I wanted to study more mathematics and so, I changed my program. I went from being an accomplished engineering student on a well defined path to a mathematics student with less clear prospects. 
+
+I did know I wanted to pursue graduate school, but as a third year student who had not planned for it, I felt the pressure of uncertainty.  
+
+With some effort (and luck) I now find myself about to attend graduate school. 
+
+I feel incredibly grateful for this opportunity to nurture my curiosity and I'm excited to make the most of it.
  
 ___
 ##### Education 
   <span style="font-size: 0.85em;">
   <a onclick="window.open('https://uwaterloo.ca/computational-mathematics/current-masters-students/degree-requirements')" style="cursor: pointer;"> 
-  **MMath Computational Mathematics**
+  **University of Waterloo**
   </a> <br>
    <span style="font-size:0.95em;">
-   *University of  Waterloo* <br/> 
-   *Sep 2024 --- Aug 2025*
+   ***Masters of Mathmatics, Computational Mathmatics*** <br/> 
+   *Sep 2024 --- Dec 2025 | Waterloo, ON*
    </span> 
 </span> 
 
@@ -35,7 +55,7 @@ ___
 **Honours BSc Computer Science and Mathematics** <br/>
  <span style="font-size:0.95em;">
  *University of Ottawa* <br/>
- *Sep 2018 --- May 2023*
+ *Sep 2018 --- May 2023 | Ottawa, ON*
  </span>
 </span> 
 
@@ -44,7 +64,7 @@ ___
 <span style="font-size:0.85em;">
 **Data Engineering Intern**<br/>
  <span style="font-size:0.95em;">
-  <a onclick="window.open('https://fintrac-canafe.canada.ca/intro-eng')" style="cursor: pointer;">
+  <a onclick="window.open('https://nrc.canada.ca/en/research-development/research-collaboration/research-centres/automotive-surface-transportation-research-centre')" style="cursor: pointer;">
   *National Research Council of Canada --- Automotive and Surface Transportation Centre* 
  </a> <br/>
  *May 2022 --- Dec 2022 | Ottawa, ON * 

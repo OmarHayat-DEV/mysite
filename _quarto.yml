@@ -9,8 +9,6 @@ website:
     left:
       - href: index.qmd
         text: About Me 
-      - href: blog.qmd
-        text: Daily Problems
     tools:
       - icon: github
         href: https://github.com/OmarHayat-DEV
