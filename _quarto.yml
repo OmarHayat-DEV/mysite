@@ -3,15 +3,11 @@ project:
 
 website:
   title: ""
-  reader-mode: true
   search: False
   navbar:
     left:
       - href: index.qmd
         text: About Me 
-    tools:
-      - icon: github
-        href: https://github.com/OmarHayat-DEV
 
   page-footer:
     center: 
