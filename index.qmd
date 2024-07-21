@@ -17,7 +17,7 @@ I am an incoming **MMath in Computational Mathematics** student at the **Univers
 
 I am co-supervised by <a  onclick="window.open('https://uwaterloo.ca/scholar/g6tran/home')" style="cursor: pointer;">**Dr. Giang Tran**</a> and <a  onclick="window.open('https://www.saeedghadimi.com/home')" style="cursor: pointer;">**Dr. Saeed Ghadimi**</a>. 
 
-The research focus of my masters is in **stochastic optimization** and **machine learning**. 
+The research focus of my masters is in **stochastic optimization**, **numerical analysis** and **machine learning**. 
 
 
 #### Brief background
