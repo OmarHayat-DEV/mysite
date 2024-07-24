@@ -5,6 +5,7 @@ about:
   links:
     - icon: file-earmark
       text: CV
+      href: https://omarhayat-dev.github.io/mysite/files/omarhayat.pdf
     - icon: github
       text: Github
       url: https://github.com/OmarHayat-DEV/
