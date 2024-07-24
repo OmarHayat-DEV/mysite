@@ -3,8 +3,8 @@ title: "Omar Hayat"
 about:
   template: marquee 
   links:
-#    - icon: file-earmark
-#      text: CV
+    - icon: file-earmark
+      text: CV
     - icon: github
       text: Github
       url: https://github.com/OmarHayat-DEV/
