@@ -14,32 +14,13 @@ about:
       href: https://www.linkedin.com/in/omarhayat1/
 ---
 
-I am an incoming **MMath in Computational Mathematics** student at the **University of Waterloo** in **Fall 2024**.
+I'm a first year **MMath in Computational Mathematics** student at the **University of Waterloo** and expected to graduate **Dec 2025**.
 
 I am co-supervised by <a  onclick="window.open('https://uwaterloo.ca/scholar/g6tran/home')" style="cursor: pointer;">**Dr. Giang Tran**</a> and <a  onclick="window.open('https://www.saeedghadimi.com/home')" style="cursor: pointer;">**Dr. Saeed Ghadimi**</a>. 
 
-The research focus of my masters is in **stochastic optimization**, **numerical analysis** and **machine learning**. 
+For my masters research project, I'm investigating applications of **machine learning** techniques to short-term atmospheric prediction for contrail avoidance.
 
-
-#### Brief background
-The seminal experience that led me to pursue graduate studies came from an undergraduate course on mathematical foundations and logic. There, I first internalized the importance of formal theories of mathematics and their axiomatic approach. 
-
-I felt I finally 'got it', the importance of having good axioms and developing theories from them. They help us say interesting things about the world. 
-
-In fact, I would go further and claim in order to say anything interesting about the world, we need some formal theory to ground it in. Luckily, mathematics offers *a framework* for other fields to adopt for their use cases. 
-
-Indeed, all areas of science, engineering, and the humanities have used mathematics to say something interesting about our world.  
-
-Mathematics is ubiquitous and will remain ubiquitous. 
-
-After that course, I realized I wanted to study more mathematics and so, I changed my program. I went from being an accomplished engineering student on a well defined path to a mathematics student with less clear prospects. 
-
-I did know I wanted to pursue graduate school, but as a third year student who had not planned for it, I felt the pressure of uncertainty.  
-
-With some effort (and luck) I now find myself about to attend graduate school. 
-
-I feel incredibly grateful for this opportunity to nurture my curiosity and I'm excited to make the most of it.
- 
+ <!-- Resume Starts Here  -->
 ___
 ##### EDUCATION
   <span style="font-size: 0.85em;">
