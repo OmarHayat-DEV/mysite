@@ -44,6 +44,16 @@ ___
 ___
 ##### PROFESSIONAL EXPERIENCE
 <span style="font-size:0.85em;">
+**Data Science Intern**<br/>
+ <span style="font-size:0.95em;">
+  <a onclick="window.open('https://www.capitalone.ca')" style="cursor: pointer;">
+  *Capital One* 
+ </a> <br/>
+ *May 2024 --- Aug 2024 | Toronto, ON * 
+ </span>
+</span> 
+
+<span style="font-size:0.85em;">
 **Data Engineering Intern**<br/>
  <span style="font-size:0.95em;">
   <a onclick="window.open('https://nrc.canada.ca/en/research-development/research-collaboration/research-centres/automotive-surface-transportation-research-centre')" style="cursor: pointer;">
