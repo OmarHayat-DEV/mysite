@@ -14,11 +14,11 @@ about:
       href: https://www.linkedin.com/in/omarhayat1/
 ---
 
-I'm a first year **MMath in Computational Mathematics** student at the **University of Waterloo** and expected to graduate **Dec 2025**.
+I am a **MMath in Computational Mathematics** new grad from the **University of Waterloo** and will confer my degree in **June 2026**.
 
-I am co-supervised by <a  onclick="window.open('https://uwaterloo.ca/scholar/g6tran/home')" style="cursor: pointer;">**Dr. Giang Tran**</a> and <a  onclick="window.open('https://www.saeedghadimi.com/home')" style="cursor: pointer;">**Dr. Saeed Ghadimi**</a>. 
+I was co-supervised by <a  onclick="window.open('https://uwaterloo.ca/scholar/g6tran/home')" style="cursor: pointer;">**Dr. Giang Tran**</a> and <a  onclick="window.open('https://www.saeedghadimi.com/home')" style="cursor: pointer;">**Dr. Saeed Ghadimi**</a>. 
 
-For my masters research project, I'm investigating applications of **machine learning** techniques to short-term atmospheric prediction for contrail avoidance.
+For my masters research project, I designed a light weight trasnformer model to do short-term atmospheric prediction for contrail avoidance.
 
  <!-- Resume Starts Here  -->
 ___
@@ -49,7 +49,7 @@ ___
   <a onclick="window.open('https://www.capitalone.ca')" style="cursor: pointer;">
   *Capital One* 
  </a> <br/>
- *May 2024 --- Aug 2024 | Toronto, ON * 
+ *May 2025 --- Aug 2025 | Toronto, ON * 
  </span>
 </span> 
 
